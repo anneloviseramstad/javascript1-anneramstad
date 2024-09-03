@@ -35,11 +35,6 @@
           <li>
             <a href="/checkout/index.html">CART</a>
           </li>
-          <div id="loginSection">
-            <button id="loginBtn">LOG IN</button>
-            <button id="logoutBtn">LOG OUT</button>
-            <div id="welcomeMsg"></div>
-          </div>
         </ul>
       </nav>
     </header>
@@ -60,12 +55,23 @@
 
       <div class="container">
         <h3 class="h3-shop">OUR OUTDOOR COLLECTION</h3>
-        <input id="search" placeholder="Search..." />
-        <select id="category">
-          <option value="">Select Category</option>
-          <option value="female">Women</option>
-          <option value="male">Men</option>
-        </select>
+        <div class="filterbox">
+          <input id="search" placeholder="Search..." />
+          <select id="category">
+            <option value="">Select Category</option>
+            <option value="Female">Women</option>
+            <option value="Male">Men</option>
+          </select>
+          <select id="sizes">
+            <option value="">Select Size</option>
+            <option value="XS">X-Small</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+          </select>
+        </div>
         <div id="products-container" class="products-container">
           <p>Loading products...</p>
         </div>

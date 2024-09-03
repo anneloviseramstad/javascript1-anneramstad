@@ -38,11 +38,7 @@
             <button id="logoutBtn">LOG OUT</button>
             <div id="welcomeMsg"></div>
           </div>
-          <div id="loginForm">
-            Username: <input type="text" id="username" /> Password:
-            <input type="password" id="password" />
-            <button onclick="login()">Log In</button>
-          </div>
+         
         </ul>
       </nav>
     </header>
@@ -51,9 +47,9 @@
         <hr class="hr-header" />
         <p class="header-info">Home > Shop</p>
         <h1>Explore Our Men's Collection</h1>
-        <section class="product-list">
-          <div class="products"></div>
-        </section>
+        <div id="products-container" class="products-container">
+          <p>Loading products...</p>
+        </div>
       </div>
     </main>
     <footer>

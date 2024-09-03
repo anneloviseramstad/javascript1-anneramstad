@@ -17,7 +17,7 @@ export function createProductsHtml(container, products) {
 
     const productCard = document.createElement("a");
     productCard.classList.add("product");
-    productCard.href = `details.html?id=${id}`;
+    productCard.href = `./product/index.html?id=${id}`;
 
     const imageElement = document.createElement("img");
     imageElement.src = image;

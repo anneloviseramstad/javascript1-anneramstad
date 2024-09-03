@@ -7,8 +7,6 @@ export function handleCategoryChange(products) {
     categorySelect.addEventListener("change", respondToCategoryChange);
   }
   function respondToCategoryChange(event) {
-    console.log(event.target.value);
-
     const selectedCategory = event.target.value;
 
     const filteredProducts = products.filter((product) => {
@@ -16,6 +14,8 @@ export function handleCategoryChange(products) {
         return true;
       }
     });
+
+    console.log(filteredProducts);
     createProductsHtml("#products-container", filteredProducts);
   }
 }

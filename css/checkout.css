@@ -49,3 +49,16 @@
   text-align: center;
   padding: 50px;
 }
+
+@media (max-width: 800px) {
+  .shipping-payment {
+    display: block;
+    gap: 24px;
+  }
+  .summary-container {
+    display: none;
+  }
+  .checkout-summary, .product-specific {
+    display: block;
+  }
+}

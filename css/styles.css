@@ -21,6 +21,17 @@ body {
   color: black;
 }
 
+.message {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.message,
+.error {
+  color: #dd1919;
+  border: 1px solid #dd1919;
+}
+
 img {
   width: 100%;
   height: auto;

@@ -36,11 +36,18 @@
   border: none;
 }
 
+#search {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #0a3641;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
 .products-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  row-gap: 56px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
   margin-bottom: 64px;
   align-items: baseline;
 }
@@ -49,6 +56,18 @@
   font-size: 24px;
   color: #0a3641;
   text-align: center;
+}
+
+a.product {
+  display: block;
+  text-decoration: none;
+  color: #0a3641;
+  padding: 1rem;
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(75, 75, 75, 0.2);
+  }
 }
 
 .discount {

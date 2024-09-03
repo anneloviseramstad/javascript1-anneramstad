@@ -1,5 +1,5 @@
-.product-page {
-  display: grid;
+#details-container {
+  display: block;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }

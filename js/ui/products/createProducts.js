@@ -1,23 +1,37 @@
-export function createProducts(container, products) {
-  for (let i = 0; i < products.length; i++) {
-    const product = products[i];
+export function createProductsHtml(container, products) {
+  let parent = container;
 
-    const div = document.createElement("div");
-    div.classList.add("product");
-
-    const img = document.createElement("img");
-    img.src = product.image;
-    img.alt = product.title;
-
-    const h2 = document.createElement("h2");
-    h2.textContent = product.title;
-
-    const p = document.createElement("p");
-    p.textContent = product.description;
-
-    div.append(img);
-    div.append(h2);
-    div.append(p);
-    container.append(div);
+  if (typeof container === "string") {
+    parent = document.querySelector(container);
   }
+
+  if (products.length === 0) {
+    parent.innerHTML = "No products found";
+    return;
+  }
+
+  parent.innerHTML = "";
+
+  products.forEach((product) => {
+    const { id, title, price, image } = product;
+
+    const productCard = document.createElement("a");
+    productCard.classList.add("product");
+    productCard.href = `details.html?id=${id}`;
+
+    const imageElement = document.createElement("img");
+    imageElement.src = image;
+    imageElement.alt = `Image of ${title}`;
+
+    const titleElement = document.createElement("h3");
+    titleElement.textContent = title;
+
+    const priceElement = document.createElement("p");
+    priceElement.textContent = price;
+
+    productCard.append(imageElement);
+    productCard.append(titleElement);
+    productCard.append(priceElement);
+    parent.append(productCard);
+  });
 }

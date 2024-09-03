@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-
+    <script
+      src="https://kit.fontawesome.com/702cf43524.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="/js/details.js" type="module"></script>
     <title>Product | Rainydays</title>
   </head>
   <body>
@@ -42,11 +47,6 @@
             <button id="logoutBtn">LOG OUT</button>
             <div id="welcomeMsg"></div>
           </div>
-          <div id="loginForm">
-            Username: <input type="text" id="username" /> Password:
-            <input type="password" id="password" />
-            <button onclick="login()">Log In</button>
-          </div>
         </ul>
       </nav>
     </header>
@@ -54,46 +54,8 @@
       <div class="container">
         <hr class="hr-header" />
         <p class="header-info">Home > Product</p>
-        <div class="product-page">
-          <div class="product-img"></div>
-          <div class="product-text"></div>
-        </div>
-      </div>
-      <div class="container">
-        <h3>MORE PHOTOS</h3>
-        <div class="product-more__img">
-          <img src="/images/product-men7.webp" />
-          <img src="/images/product-men8.webp" />
-        </div>
-      </div>
-      <div class="container">
-        <div class="product-info">
-          <section class="overview">
-            <h3>OVERVIEW</h3>
-            <p>
-              Experience the ultimate blend of durability and comfort with our
-              Forest Jacket, designed to withstand the toughest elements. This
-              jacket features a versatile olive green hue, a high-performance
-              waterproof outer shell, and multiple zippered and flap pockets for
-              secure storage.
-            </p>
-            <p>
-              The adjustable hood and storm flap closure ensure full protection
-              against wind and rain, making it perfect for outdoor adventures or
-              everyday urban wear.
-            </p>
-          </section>
-          <section class="features">
-            <strong>Waterproof</strong>
-            <p>Featuring advanced hydrophobic fabric technology.</p>
-            <strong>Windproof</strong>
-            <p>Wind-blocking technology.</p>
-            <strong>Air flow</strong>
-            <p>
-              Advanced air flow technology to ensure optimal ventilation and
-              comfort during active pursuits.
-            </p>
-          </section>
+        <div id="details-container" class="details-container">
+          <p>Loading product...</p>
         </div>
       </div>
     </main>
@@ -134,6 +96,5 @@
         </div>
       </div>
     </footer>
-    <script src="/js/scripts.js" type="module"></script>
   </body>
 </html>

@@ -48,6 +48,22 @@
 .order-confirmed {
   text-align: center;
   padding: 50px;
+  margin-bottom: 180px;
+}
+
+.checkbox {
+  width: 20%;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.order-confirmed p {
+  padding-bottom: 40px;
+}
+
+.cart-image {
+  width: 5rem;
+  height: auto;
 }
 
 @media (max-width: 800px) {
@@ -58,7 +74,11 @@
   .summary-container {
     display: none;
   }
-  .checkout-summary, .product-specific {
+  .checkout-summary,
+  .product-specific {
     display: block;
+  }
+  .checkbox {
+    width: 30%;
   }
 }

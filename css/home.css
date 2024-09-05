@@ -150,4 +150,35 @@ a.product {
   .heading-text {
     width: 90%;
   }
+  .filterbox input,
+  select {
+    padding: 4px;
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    height: 50vh;
+  }
+  .heading-text {
+    width: 90%;
+  }
+  .heading h2 {
+    display: none;
+  }
+  .h1-homepage {
+    padding-bottom: 20px;
+  }
+  .discount {
+    display: block;
+    padding: 10px;
+  }
+  .discount-number {
+    display: none;
+  }
+  .slogan p {
+    padding: 16px;
+    font-size: 20px;
+  }
 }

@@ -35,3 +35,13 @@ i {
     color: #0a3641;
   }
 }
+
+@media (max-width: 700px) {
+  .product-detail {
+    display: block;
+    padding: 0;
+  }
+  .product-info > * {
+    margin: 8px;
+  }
+}

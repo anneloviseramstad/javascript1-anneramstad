@@ -43,9 +43,9 @@ h1 {
 }
 
 @media (max-width: 600px) {
-h1 {
-  font-size: 24px;
-}
+  h1 {
+    font-size: 24px;
+  }
 }
 
 h2 {
@@ -100,7 +100,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 96px;
+  padding: 0 30px;
   transition: 0.3s;
 }
 
@@ -110,7 +110,7 @@ header {
 
 .logo a img {
   display: block;
-  width: 15%;
+  width: 5rem;
   padding: 20px 0;
 }
 
@@ -256,7 +256,6 @@ nav a {
   }
   .logo a img {
     padding: 10px;
-    width: 20%;
   }
   .menu {
     justify-content: start;

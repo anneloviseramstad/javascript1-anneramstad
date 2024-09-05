@@ -20,8 +20,8 @@
   border-radius: 4px;
 }
 
-
-.btn-checkout {
+.btn-checkout,
+.btn {
   background-color: #0a3641;
   color: white;
   font-weight: 500;
@@ -94,5 +94,15 @@
   }
   .checkbox {
     width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .order-confirmed {
+    padding: 20px 0;
+    margin-bottom: 0;
+  }
+  .cart-detail {
+    display: block;
   }
 }

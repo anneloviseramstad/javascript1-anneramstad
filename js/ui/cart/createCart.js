@@ -52,7 +52,7 @@ function confirmationButton() {
 
   button.addEventListener("click", () => {
     clearCart();
-    window.location.href = "/checkout/confirmation/index.html";
+    window.location.href = "../checkout/confirmation/index.html";
   });
 
   return button;

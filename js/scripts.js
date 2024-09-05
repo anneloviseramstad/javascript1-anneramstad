@@ -13,11 +13,10 @@ function router() {
     case "/index.html":
     case "/women/index.html":
     case "/men/index.html":
-      console.log("I'm on the home page");
+    case "/checkout/confirmation/index.html":
       displayProducts();
       break;
     case "/product/index.html":
-      console.log("I'm on the products page");
       displayProduct();
       break;
     case "/checkout/index.html":

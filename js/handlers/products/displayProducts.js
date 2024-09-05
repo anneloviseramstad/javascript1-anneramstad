@@ -1,9 +1,9 @@
-import { fetchProducts } from "../api/products/fetchProducts.js";
-import { displayMessage } from "../ui/common/displayMessage.js";
-import { createProductsHtml } from "../ui/products/createProducts.js";
-import { filterProducts } from "/filterProducts.js";
-import { handleCategoryChange } from "/handleCategoryChange.js";
-import { handleSizeChange } from "/handleSizeChange.js";
+import { fetchProducts } from "../../api/products/fetchProducts.js";
+import { displayMessage } from "../../ui/common/displayMessage.js";
+import { createProductsHtml } from "../../ui/products/createProducts.js";
+import { filterProducts } from "./filterProducts.js";
+import { handleCategoryChange } from "./handleCategoryChange.js";
+import { handleSizeChange } from "./handleSizeChange.js";
 export async function displayProducts() {
   const container = document.querySelector("#products-container");
   try {

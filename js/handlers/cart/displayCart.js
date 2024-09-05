@@ -1,5 +1,5 @@
-import { getCart } from "../utils/cart.js";
-import { createCartHtml } from "../ui/cart/createCart.js";
+import { getCart } from "../../utils/cart.js";
+import { createCartHtml } from "../../ui/cart/createCart.js";
 
 export function displayCart() {
   const cart = getCart();

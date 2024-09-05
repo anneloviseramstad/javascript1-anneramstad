@@ -1,4 +1,4 @@
-import { productsUrl } from "../constants/api.js";
+import { productsUrl } from "../../constants/api.js";
 
 export async function fetchProducts() {
   const response = await fetch(productsUrl);

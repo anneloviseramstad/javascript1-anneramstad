@@ -1,4 +1,4 @@
-import { addToCart, isIdInCart, removeFromCart } from "../utils/cart.js";
+import { addToCart, isIdInCart, removeFromCart } from "../../utils/cart.js";
 
 export function handleCartIconClick() {
   const cartIcon = document.querySelector("#cart-icon");

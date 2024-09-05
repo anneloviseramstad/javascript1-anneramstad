@@ -1,4 +1,4 @@
-import { createProductsHtml } from "../../ui/products/createProducts.js";
+import { createProductsHtml } from "../ui/products/createProducts.js";
 
 export function filterProducts(products) {
   const searchInput = document.querySelector("#search");

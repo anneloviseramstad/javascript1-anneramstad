@@ -1,5 +1,5 @@
-import { displayMessage } from "../common/displayMessage.js";
-import { clearCart, getTotalPrice } from "../../utils/cart.js";
+import { displayMessage } from "common/displayMessage.js";
+import { clearCart, getTotalPrice } from "../utils/cart.js";
 
 export function createCartHtml(container, cart) {
   if (cart.length === 0) {

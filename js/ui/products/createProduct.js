@@ -1,4 +1,4 @@
-import { isIdInCart } from "../../utils/cart.js";
+import { isIdInCart } from "../utils/cart.js";
 
 export function createProductHtml(container, product) {
   container.innerHTML = "";

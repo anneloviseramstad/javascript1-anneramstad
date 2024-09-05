@@ -1,4 +1,4 @@
-import { productsUrl } from "../constants/api.js";
+import { productsUrl } from "/constants/api.js";
 
 export async function fetchProductsById(id) {
   const url = `${productsUrl}/${id}`;

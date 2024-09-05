@@ -1,4 +1,4 @@
-import { createProductsHtml } from "../../ui/products/createProducts.js";
+import { createProductsHtml } from "../ui/products/createProducts.js";
 
 export function handleSizeChange(products) {
   const sizeSelect = document.querySelector("#sizes");

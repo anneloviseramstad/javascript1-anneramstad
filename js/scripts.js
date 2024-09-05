@@ -10,6 +10,7 @@ function router() {
   switch (pathname) {
     case "/":
     case "/index.html":
+    case "/anneloviseramstad.github.io/javascript1-anneramstad/":
       console.log("I'm on the home page");
       displayProducts();
       break;

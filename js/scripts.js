@@ -3,14 +3,14 @@ import { displayProduct } from "./handlers/products/displayProduct.js";
 import { displayCart } from "./handlers/cart/displayCart.js";
 
 function router() {
-  const { pathname } = window.location;
-
-  console.log(pathname);
+  //const { pathname } = window.location;
+  const fullPath = window.location.pathname;
+  const pathParts = fullPath.split("/").slice(2).join("/");
+  const pathname = `/${pathParts}`;
 
   switch (pathname) {
     case "/":
     case "/index.html":
-    case "/anneloviseramstad.github.io/javascript1-anneramstad/":
       console.log("I'm on the home page");
       displayProducts();
       break;

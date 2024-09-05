@@ -11,6 +11,8 @@ function router() {
   switch (pathname) {
     case "/":
     case "/index.html":
+    case "/women/index.html":
+    case "/men/index.html":
       console.log("I'm on the home page");
       displayProducts();
       break;

@@ -14,11 +14,11 @@ function router() {
       console.log("I'm on the home page");
       displayProducts();
       break;
-    case "/product/index.html":
+    case "product/index.html":
       console.log("I'm on the products page");
       displayProduct();
       break;
-    case "/checkout/index.html":
+    case "checkout/index.html":
       displayCart();
   }
 }

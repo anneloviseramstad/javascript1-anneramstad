@@ -5,6 +5,7 @@ import { filterProducts } from "./filterProducts.js";
 import { handleCategoryChange } from "./handleCategoryChange.js";
 import { handleSizeChange } from "./handleSizeChange.js";
 import { handleColorChange } from "./handleColorChange.js";
+
 export async function displayProducts() {
   const container = document.querySelector("#products-container");
   try {

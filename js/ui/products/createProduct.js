@@ -29,26 +29,30 @@ export function createProductHtml(container, product) {
   const descriptionElement = document.createElement("p");
   descriptionElement.textContent = description;
 
-  const iconWrapper = document.createElement("div");
-  iconWrapper.classList.add("icon-wrapper");
+  const cartIcon = document.createElement("i");
+  cartIcon.classList.add("fa-solid", "fa-cart-plus");
+  cartIcon.id = "cart-icon";
+  cartIcon.dataset.id = id;
+  cartIcon.dataset.title = title;
+  cartIcon.dataset.price = price;
+  cartIcon.dataset.image = image;
+  cartIcon.dataset.baseColor = baseColor;
+  cartIcon.dataset.description = description;
 
-  const cartIcon = createCartIcon(
-    id,
-    title,
-    price,
-    image,
-    baseColor,
-    description
-  );
+  if (isIdInCart(id)) {
+    cartIcon.classList.add("fa-cart-shopping", "toned");
+  } else {
+    cartIcon.classList.add("fa-cart-plus");
+  }
 
   infoWrapper.append(titleElement);
   infoWrapper.append(colorElement);
   infoWrapper.append(priceElement);
-
+  infoWrapper.append(cartIcon);
   infoWrapper.append(descriptionElement);
 
   productCard.append(imageElement);
   productCard.append(infoWrapper);
-  iconWrapper.append(cartIcon);
+
   container.append(productCard);
 }

@@ -1,5 +1,3 @@
-import { createCartIcon } from "../../ui/cart/createCartIcon.js";
-
 export function createProductsHtml(container, products) {
   let parent = container;
 
@@ -31,12 +29,10 @@ export function createProductsHtml(container, products) {
     const priceElement = document.createElement("p");
     priceElement.textContent = price;
 
-    const cartIcon = createCartIcon(id, title, price, image);
-
     productCard.append(imageElement);
     productCard.append(titleElement);
     productCard.append(priceElement);
-    productCard.append(cartIcon);
+
     parent.append(productCard);
   });
 }

@@ -13,6 +13,13 @@ export function isIdInCart(id) {
   return cart.some((item) => item.id === id);
 }
 
+export function addToCart(id, title, image, price) {
+  const newItem = { id: id, title: title, image: image, price: price };
+
+  const cart = getCart();
+  cart.push(newItem);
+  saveToCart(cart);
+}
 
 export function removeFromCart(id) {
   const cart = getCart();

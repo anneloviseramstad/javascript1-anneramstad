@@ -10,7 +10,7 @@ export function handleSizeChange(products) {
     const selectedSize = event.target.value;
 
     const filteredSizes = products.filter((product) => {
-      if (product.sizes === selectedSize) {
+      if (product.sizes.includes(selectedSize)) {
         return true;
       }
     });

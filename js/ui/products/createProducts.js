@@ -1,5 +1,5 @@
 import { isIdInCart } from "../../utils/cart.js";
-import { addToCart } from "../../utils/cartFunctions.js";
+
 export function createProductsHtml(container, products) {
   let parent = container;
 
@@ -43,7 +43,7 @@ export function createProductsHtml(container, products) {
     cartIcon.dataset.price = price;
     cartIcon.addEventListener("click", function (event) {
       event.stopPropagation();
-      addToCart(product);
+      console.log("Product is added to cart");
     });
 
     if (isIdInCart(id)) {
@@ -55,8 +55,4 @@ export function createProductsHtml(container, products) {
 
     parent.append(productCard);
   });
-}
-
-function addToCart(product) {
-  console.log("Product added to cart", product.title);
 }

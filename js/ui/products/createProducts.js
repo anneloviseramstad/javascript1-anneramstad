@@ -1,3 +1,5 @@
+import { addToCart, isIdInCart } from "../../utils/cart.js";
+
 export function createProductsHtml(container, products) {
   let parent = container;
 
@@ -33,6 +35,28 @@ export function createProductsHtml(container, products) {
     productCard.append(titleElement);
     productCard.append(priceElement);
 
+    const cartIcon = document.createElement("i");
+    cartIcon.classList.add("fa-solid", "fa-cart-plus");
+    cartIcon.dataset.id = id;
+    cartIcon.dataset.title = title;
+    cartIcon.dataset.image = image;
+    cartIcon.dataset.price = price;
+    cartIcon.addEventListener("click", function (event) {
+      event.stopPropagation();
+      addToCart(product);
+    });
+
+    if (isIdInCart(id)) {
+      cartIcon.classList.add("in-cart");
+    }
+
+    productCard.append(link);
+    productCard.append(cartIcon);
+
     parent.append(productCard);
   });
+}
+
+function addToCart(product) {
+  console.log("Product added to cart", product.title);
 }

@@ -29,6 +29,9 @@ export function createProductHtml(container, product) {
   const descriptionElement = document.createElement("p");
   descriptionElement.textContent = description;
 
+  const iconWrapper = document.createElement("div");
+  iconWrapper.classList.add("icon-wrapper");
+
   const cartIcon = createCartIcon(
     id,
     title,
@@ -41,11 +44,11 @@ export function createProductHtml(container, product) {
   infoWrapper.append(titleElement);
   infoWrapper.append(colorElement);
   infoWrapper.append(priceElement);
-  infoWrapper.append(cartIcon);
+
   infoWrapper.append(descriptionElement);
 
   productCard.append(imageElement);
   productCard.append(infoWrapper);
-
+  iconWrapper.append(cartIcon);
   container.append(productCard);
 }

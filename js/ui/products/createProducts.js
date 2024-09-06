@@ -1,5 +1,5 @@
-import { addToCart, isIdInCart } from "../../utils/cart.js";
-
+import { isIdInCart } from "../../utils/cart.js";
+import { addToCart } from "../../utils/cartFunctions.js";
 export function createProductsHtml(container, products) {
   let parent = container;
 

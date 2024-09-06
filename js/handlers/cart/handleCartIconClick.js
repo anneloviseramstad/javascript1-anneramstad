@@ -1,5 +1,5 @@
-import { addToCart, isIdInCart, removeFromCart } from "../../utils/cart.js";
-
+import { isIdInCart, removeFromCart } from "../../utils/cart.js";
+import { addToCart } from "../../utils/cartFunctions.js";
 export function handleCartIconClick() {
   const cartIcon = document.querySelector("#cart-icon");
   cartIcon.addEventListener("click", respondToCartIconClick);

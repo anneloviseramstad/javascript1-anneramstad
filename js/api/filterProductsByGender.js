@@ -5,7 +5,7 @@ export async function fetchProductsByGender(gender) {
   return products.filter((product) => product.gender === gender);
 }
 
-async function fetchProductsByGender() {
+async function displayProductsByGender() {
   const path = window.location.pathname;
 
   let gender = "";
@@ -41,4 +41,4 @@ function renderProducts(products) {
   });
 }
 
-displayProductsForGender();
+displayProductsByGender();

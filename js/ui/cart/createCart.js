@@ -19,7 +19,6 @@ export function createCartHtml(container, cart) {
   const button = confirmationButton();
 
   cart.forEach((cartItem) => {
-    console.log(cartItem);
     const { title } = cartItem;
 
     const cartCard = document.createElement("div");

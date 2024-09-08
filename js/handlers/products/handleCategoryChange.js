@@ -15,7 +15,6 @@ export function handleCategoryChange(products) {
       }
     });
 
-    console.log(filteredProducts);
     createProductsHtml("#products-container", filteredProducts);
   }
 }

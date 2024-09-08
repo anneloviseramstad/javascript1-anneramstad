@@ -9,14 +9,13 @@ export function filterProducts(products) {
 
   function handleFilter(event) {
     const filterValue = event.target.value.trim().toLowerCase();
-    console.log(filterValue);
 
     const filterProducts = products.filter((product) => {
       if (product.title.toLowerCase().startsWith(filterValue)) {
         return true;
       }
     });
-    console.log(filterProducts);
+
     createProductsHtml("#products-container", filterProducts);
   }
 }

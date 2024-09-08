@@ -15,7 +15,6 @@ export function handleSizeChange(products) {
       }
     });
 
-    console.log(filteredSizes);
     createProductsHtml("#products-container", filteredSizes);
   }
 }

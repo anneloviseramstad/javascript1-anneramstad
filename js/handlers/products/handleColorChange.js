@@ -15,7 +15,6 @@ export function handleColorChange(products) {
       }
     });
 
-    console.log(filteredProducts);
     createProductsHtml("#products-container", filteredProducts);
   }
 }
